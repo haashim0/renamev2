@@ -1,0 +1,47 @@
+{
+    "name": "Telegram Files Renamer Bot",
+    "description": "A Very Simple Telegram Files Rename Bot by @RymOfficial",
+    "keywords": [
+        "telegram",
+        "files",
+        "rename",
+        "bot"
+    ],
+    "repository": "https://github.com/RYM-OFFICIAL/FastRenameBot",
+    "website": "https://t.me/RymOfficial",
+    "success_url": "https://t.me/JaiHindChatting",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather XD"
+        },
+        "MONGODB_URI": {
+            "description": "MongoDB Database URI for Saving UserID for Broadcast"
+        },
+        "LOG_CHANNEL": {
+            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+        },
+        "OWNER_ID": {
+            "description": "Bot Owner UserID"
+        }
+    },
+    "buildpacks": [ 
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }, 
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
