@@ -7,7 +7,7 @@
         "rename",
         "bot"
     ],
-    "repository": "https://github.com/RYM-OFFICIAL/FastRenameBot",
+    "repository": "https://github.com/RymOfficial/FastRenameBot",
     "website": "https://t.me/RymOfficial",
     "success_url": "https://t.me/JaiHindChatting",
     "env": {
